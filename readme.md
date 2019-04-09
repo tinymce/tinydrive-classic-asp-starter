@@ -24,7 +24,12 @@ You get the api key from the `API Key Manager` account manager at http://tiny.cl
 
 You get the private RSA key from the `JWT Key Manager` account manager at http://tiny.cloud.
 
-Notice that this sample project only supports the older key format starting with `-----BEGIN RSA PRIVATE KEY-----`.
+Notice that this sample project only supports the older key format PKCS#1 starting with `-----BEGIN RSA PRIVATE KEY-----`.
+
+You can convert the newer format to this older format using open ssl:
+```
+$ openssl rsa -inform PEM -outform PEM -in new-private.key > private.key
+```
 
 ### 4. Open the example project at http://localhost/tinydrive-classic-asp-starter
 
