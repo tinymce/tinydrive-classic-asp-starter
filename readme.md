@@ -2,6 +2,10 @@
 
 This project will help you get started with Tiny Drive and allow you to play around with it's features.
 
+## Warning
+
+This uses JScript to generate the key, this is VERY SLOW (4-8 seconds) and not a good production setup. In order to solve this, you would need to re-build this with a JWT Component that can handle the key generation much faster.
+
 ## Pre requirements
 
 Classic ASP on a IIS Server on any supported platform.
